@@ -1,0 +1,168 @@
+header {
+  padding-top: 5.6875rem;
+  text-align: center;
+}
+
+body {
+  background-color: #fff5f5;
+}
+
+h1, h2, h3, p {
+  font-family: 'Poppins', sans-serif;
+  color: #4c4e61;
+}
+
+p {
+  opacity: 0.7;
+  font-size: 14px;
+  font-weight: 400;
+  color: #a3a5ae;
+}
+
+img {
+  float: right;
+  margin-top: 20px;
+}
+
+.title-one {
+  font-weight: 200;
+  font-size: 2.3rem;
+  opacity: .7;
+}
+
+.title-two {
+  font-weight: 600;
+  font-size: 2.3rem;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+.box {
+  width: 21.875rem;
+  height: 15.625rem;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 1.875rem;
+  border-top-style: solid;
+  border-width: 0.25rem;
+  border-radius: .5rem;
+  box-shadow: 0 13px 16px -1px rgba(163, 165, 174, 0.3);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.card-text {
+  line-height: 1.5rem;
+}
+
+.card-one {
+  border-color: #45d3d3;
+}
+
+.card-two {
+  border-color: #ea5353;
+}
+
+.card-three {
+  border-color: #fcaf4a;
+}
+
+.card-four {
+  border-color: #549ef2;
+}
+
+.footer {
+  height: 80px;
+  width: 1440px;
+}
+
+/* -----------------------------header mobile-------------------------- */
+@media (max-width: 628px) {
+  .title-one {
+    font-size: 1.8rem;
+  }
+
+  .title-two {
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+
+  header {
+    padding-bottom: 67px;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 91px;
+  }
+}
+
+@media (min-width: 629px) {
+  .subtitle {
+    width: 523px;
+    margin: 0 auto;
+    padding-top: 15px;
+  }
+
+  header {
+    padding-bottom: 67px;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 91px;
+  }
+}
+
+@media (min-width: 1100px) {
+  header {
+    padding-bottom: 0;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 91px;
+  }
+}
+
+/* -----------------------------Cards mobile & desktop-------------------------- */
+@media (max-width: 1100px) {
+  .box {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .box-container {
+    margin: 0 background-color: white;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: auto 350px 350px 350px auto;
+    grid-template-rows: auto 125px 125px 125px 125px 125px auto;
+  }
+
+  .card-one {
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+    align-self: center;
+  }
+
+  .card-two {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    align-self: end;
+  }
+
+  .card-three {
+    grid-column: 4 / 5;
+    grid-row: 3 / 5;
+    align-self: center;
+  }
+
+  .card-four {
+    grid-column: 3 / 4;
+    grid-row: 4 / 6;
+  }
+}
